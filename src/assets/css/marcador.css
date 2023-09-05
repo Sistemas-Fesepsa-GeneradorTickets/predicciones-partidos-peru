@@ -1,0 +1,168 @@
+
+*{
+  box-sizing: border-box;
+}
+
+/* Estilos para el div con la imagen y el título */
+main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: 100;
+}
+
+.barra {
+    background-color:  rgb(194, 63, 63);;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 920px;
+    margin: auto;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+  }
+  
+  .barra img {
+    margin-right: 10px;
+  }
+  
+.opciones{
+  width: 920px;
+  margin: auto;
+  background: rgb(194, 63, 63);
+  padding: 5px 0px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.extra{
+   position: absolute;
+   right: 0;
+}
+
+
+  /* Estilos para los enlaces */
+  main div:nth-child(2) a {
+
+    text-decoration: none;
+    padding: 5px 0px;
+    margin-right: 15px;
+    /* transition: all 5s; */
+    margin-left: 15px;
+    border: 1px solid #fff;
+    padding: 8px;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+  }
+  
+  main div:nth-child(2) a:hover {
+    background-color: red;
+    color: white;
+  }
+  
+
+/* Estilo para un input type number */
+input[type="number"] {
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  width: 50px;
+}
+
+/* Estilo para cuando el input está enfocado */
+input[type="number"]:focus {
+  outline: none; /* Quita el contorno predeterminado al enfocar */
+  border-color: #007bff; /* Cambia el color del borde al enfocar (azul en este ejemplo) */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+}
+
+
+
+  .cajaTarjetas{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     /* border: 2px solid black; */
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+     gap: 15px;
+     width: 900px;
+     margin: 16px auto;
+     padding: 10px;
+  }
+
+  .tarjeta{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     /* border: 1px solid green; */
+     width: 400px;
+     padding: 15px;
+      border: 0.5px solid #ccc;
+  }
+
+  .div_tarjeta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .div_tarjeta div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .fechas{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding-top: 10px;
+  }
+
+
+
+  @media (max-width:480px) {
+    
+    main{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    
+.barra {
+  width: 100%;
+  font-size: 10px;
+}
+
+.opciones{
+  width: 100%;
+}
+
+.cajaTarjetas{
+  width: 100%;
+}
+
+.tarjeta{
+  display: flex;
+  /* border: 1px solid green; */
+  width: 100%;
+  padding: 15px;
+  border: 0.5px solid #ccc;
+}
+
+main div:nth-child(2) a {
+   font-size: 12px;
+}
+
+
+
+}
