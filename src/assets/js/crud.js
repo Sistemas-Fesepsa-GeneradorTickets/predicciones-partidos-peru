@@ -1,6 +1,5 @@
 import {
-  crearPrediccion,
-  leerDatos
+  crearPrediccion
 } from '../../db/firebase.js'
 import { 
   serverTimestamp
