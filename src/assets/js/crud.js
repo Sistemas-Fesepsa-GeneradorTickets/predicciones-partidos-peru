@@ -116,6 +116,7 @@ btnRegistrarPrediccion.onclick = async function(){
     }
 
 
+    
    const objetoPrediccion = {
          dni: localStorage.getItem("DNI"),
          fecha: serverTimestamp(),

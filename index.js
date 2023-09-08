@@ -5,7 +5,7 @@ let asociados =['72718154','25621432','44426711','25741815','07795717','07786355
 
 
 let fechaActual = new Date();
-let fechaLimite = new Date("2023-09-06T00:00:00");
+let fechaLimite = new Date("2023-09-11T00:00:00");
 
 
 
@@ -33,7 +33,7 @@ formIngreso.addEventListener("submit",(e)=>{
         Swal.fire({
                 icon: 'error',
                 title: 'Sistema Inhabilitado',
-                text: 'El sistema estará habilitado a partir del 06 desde las 00:00 horas'
+                text: 'El sistema estará habilitado a partir del 11 desde las 00:00 horas'
         })   
        }
 
