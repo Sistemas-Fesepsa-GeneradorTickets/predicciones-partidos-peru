@@ -102,7 +102,7 @@ venezuela_peru.style.background = "#ccc"
 btnRegistrarPrediccion.onclick = async function(){
  
     let fechaActual = new Date();
-    let fechaLimite = new Date("2023-09-12T17:00:00");
+    let fechaLimite = new Date("2023-09-12T20:30:00");
     
 
     
