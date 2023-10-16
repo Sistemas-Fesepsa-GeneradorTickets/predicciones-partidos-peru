@@ -69,20 +69,20 @@ brasil_peru.disabled = "true"
 brasil_peru.style.background = "#ccc"
 
 //BLOQUEO TERCERA FECHA
-//chile_peru.disabled = "true"
-//chile_peru.style.background = "#ccc"
+chile_peru.disabled = "true"
+chile_peru.style.background = "#ccc"
 
 
-//peru_chile.disabled = "true"
-//peru_chile.style.background = "#ccc"
+peru_chile.disabled = "true"
+peru_chile.style.background = "#ccc"
 
 
 //BLOQUEO CUARTA FECHA
-peru_argentina.disabled = "true"
-peru_argentina.style.background = "#ccc"
+//peru_argentina.disabled = "true"
+//peru_argentina.style.background = "#ccc"
 
-argentina_peru.disabled = "true"
-argentina_peru.style.background = "#ccc"
+//argentina_peru.disabled = "true"
+//argentina_peru.style.background = "#ccc"
 
 //BLOQUEO QUINTA FECHA
 bolivia_peru.disabled = "true"
@@ -102,7 +102,7 @@ venezuela_peru.style.background = "#ccc"
 btnRegistrarPrediccion.onclick = async function(){
  
     let fechaActual = new Date();
-    let fechaLimite = new Date("2023-10-12T18:30:00");
+    let fechaLimite = new Date("2023-10-17T20:30:00");
     
    
     
@@ -120,14 +120,14 @@ btnRegistrarPrediccion.onclick = async function(){
    const objetoPrediccion = {
          dni: localStorage.getItem("DNI"),
          fecha: serverTimestamp(),
-         marcadorPeru: peru_chile.value,         
-         marcadorChile: chile_peru.value
+         marcadorPeru: peru_argentina.value,         
+         marcadorArgentina: argentina_peru.value
    }
 
     btnRegistrarPrediccion.disabled = "true"
     btnRegistrarPrediccion.style.opacity = "0.3" 
     
-    await crearPrediccion(objetoPrediccion,"predicciones3")
+    await crearPrediccion(objetoPrediccion,"predicciones4")
     
     
     Swal.fire(
